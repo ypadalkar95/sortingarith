@@ -16,3 +16,16 @@ output[3]=$(($c+$a/$b))
 output[4]=$(($a%$b+$c))
 
 echo ${output[@]}
+
+for (( i = 0; i <= 4 ; i++ ))
+do
+   for (( j = $i; j <= 4; j++ ))
+do
+      if [ ${output[$i]} -gt ${output[$j]}  ]; then
+       t=${output[$i]}
+       output[$i]=${output[$j]}
+       output[$j]=$t
+      fi
+done
+done
+echo ${output[@]}
