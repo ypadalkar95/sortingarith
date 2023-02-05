@@ -8,5 +8,5 @@ echo "first input is : $a"
 echo "Second input is : $b"
 echo "Third input is : $c"
 
-output=$(($a+$b*$c))
+output=$(($a*$b+$c))
 echo $output
