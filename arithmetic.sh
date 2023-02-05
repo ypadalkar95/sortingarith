@@ -21,7 +21,7 @@ for (( i = 0; i <= 4 ; i++ ))
 do
    for (( j = $i; j <= 4; j++ ))
 do
-      if [ ${output[$i]} -gt ${output[$j]}  ]; then
+      if [ ${output[$i]} -lt ${output[$j]}  ]; then
        t=${output[$i]}
        output[$i]=${output[$j]}
        output[$j]=$t
