@@ -1,10 +1,12 @@
 echo " Enter the first input"
-read input1
+read a
 echo "Enter the second input"
-read input2
+read b
 echo "Enter the third input"
-read input3
-echo "first input is : $input1"
-echo "Second input is : $input2"
-echo "Third input is : $input3"
+read c
+echo "first input is : $a"
+echo "Second input is : $b"
+echo "Third input is : $c"
 
+output=$(($a+$b*$c))
+echo $output
